@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Header Example</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style> 
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Sticky Header */
+  .sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 15px 30px;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+
+  /* Logo */
+  .sticky-header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+  /* Navigation */
+  .sticky-header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+
+  .sticky-header nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+
+  .sticky-header nav a:hover {
+    color: #0077ff;
+  }
+
+  /* Demo spacing */
+  main section {
+    padding: 50px;
+  }
+</style>
+</head>
+<body>
+
+  <header class="sticky-header">
+    <div class="logo">MyLogo</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Welcome</h2>
+      <p>Scroll down to see the sticky header in action!</p>
+    </section>
+    <section>
+      <p style="height:2000px;">Lots of content here...</p>
+    </section>
+  </main>
+
+</body>
+</html>
+
+
+
