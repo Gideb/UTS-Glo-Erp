@@ -78,6 +78,7 @@ body {
   background-color: #d3d3d3;
   color: #1d5971 !important;
 }
+
 /* 
 .hero-section {
   text-align: center;
@@ -96,9 +97,11 @@ body {
   margin-bottom: 50px;
 }
 
+*/
+
 .cta-button {
   display: inline-block;
-  padding: 15px 25px;
+  padding: 15px 15px;
   border: 1px solid var(--text-color);
   border-radius: var(--radius);
   text-decoration: none;
@@ -110,7 +113,7 @@ body {
   background-color: var(--btn-bg);
   color: var(--primary-color);
   transform: translateY(-8px);
-} */
+} 
 
 .carousel-container {
   position: relative;
@@ -156,8 +159,6 @@ body {
   color: #423c3c;
 }
 
-
-
 #products {
   padding: 150px;
 }
@@ -190,6 +191,7 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
   padding: 60px 20px;
+  background-color: wheat;
 }
 
 .product-card {
@@ -235,11 +237,18 @@ body {
   transition: transform 0.3s ease, background-color 0.3s, color 0.3s;
 }
 
+.products-grid .cta-button {
+  display: block;
+  margin: 30px auto 0 auto;
+  text-align: center;
+  grid-column: 1 / -1;
+}
+
 /* .colored .btn-product {
   background-color: var(--primary-color);
   color: #033548;
 } */
- 
+
 :is(.btn-product):hover {
   transform: translateY(-8px);
   background-color: #033548;
@@ -267,9 +276,32 @@ body {
 }
 
 .company-logo img {
-  width: 60%;
-  border-radius: var(--radius);
+  width: 300px;
+  height: auto;
 }
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  /* background: #f9f9f9; */
+  padding: 10px 0;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 100px;
+  animation: scroll-left 15s linear infinite;
+}
+
+@keyframes scroll-left {
+  from { transform: translateX(0%); }
+  to { transform: translateX(-50%); }
+}
+
+
+
+
+
 
 .contact {
   text-align: center;
