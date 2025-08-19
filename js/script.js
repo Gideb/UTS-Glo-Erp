@@ -1,11 +1,11 @@
-window.addEventListener("load", () => {
+/* window.addEventListener("load", () => {
   const loader = document.getElementById("loader");
   const container = document.getElementById("container");
 
   loader.style.opacity = "0";
   loader.style.visibility = "hidden";
   container.classList.add("show");
-});
+}); */
 
 document.addEventListener("DOMContentLoaded", () => {
   const slides = document.querySelectorAll(".carousel-slide");
@@ -40,6 +40,11 @@ document.addEventListener("DOMContentLoaded", () => {
     showSlide(currentSlide);
   }, 3000);
 });
+
+
+
+
+
 
 document.getElementById("copyright-date").textContent =
   new Date().getFullYear();

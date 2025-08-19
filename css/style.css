@@ -9,6 +9,7 @@
   --text-color: #09769f;
   --btn-bg: #09769f;
   --primary-color: #fefefe;
+  --secondary-color: #06475f;
   --radius: 5px;
 }
 
@@ -17,7 +18,6 @@ body {
   transition: all 0.5s ease;
   color: var(--text-color);
 }
-
 
 .container {
   margin: auto;
@@ -33,20 +33,20 @@ body {
   background-color: var(--primary-color);
   display: flex;
   align-items: center;
-  padding: 20px;
-  justify-content: center;
+  padding: 20px 150px;
+  justify-content: space-between;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   color: var(--text-color);
 }
 
-.header-section img {
+.header-section .logo {
   width: 100px;
 }
 
 .header-nav ul {
   display: flex;
   gap: 10px;
-  margin-left: 500px;
+  margin-left: 600px;
   margin-top: 20px;
 }
 
@@ -57,26 +57,30 @@ body {
 .header-nav a {
   text-decoration: none;
   color: var(--text-color);
-  padding: 10px 25px;
+  padding: 10px 15px;
   transition: color 0.3s;
 }
 
 .fa-home {
   position: relative;
   bottom: 11px;
-  left: 15px;
+  right: 10px;
   font-size: 1.2rem;
 }
-.active {
+/* .active {
   background-color: var(--btn-bg);
   color: var(--primary-color) !important;
   transition: all 0.8s ease-in;
   margin: 0 -10px;
+} */
+
+.header-nav a:hover {
+  background-color: #d3d3d3;
+  color: #1d5971;
 }
 
-.active:hover {
-  background-color: #d3d3d3;
-  color: #1d5971 !important;
+.fa-home:hover {
+  background-color: transparent !important;
 }
 
 /* 
@@ -113,7 +117,7 @@ body {
   background-color: var(--btn-bg);
   color: var(--primary-color);
   transform: translateY(-8px);
-} 
+}
 
 .carousel-container {
   position: relative;
@@ -130,6 +134,7 @@ body {
   min-width: 100%;
   display: none;
   transition-behavior: smooth;
+  height: 95vh;
 }
 
 .carousel-slide.active-slide {
@@ -143,6 +148,8 @@ body {
   left: 20px;
   color: #141313;
   border: none;
+  background-color: #eee;
+  border-radius: var(--radius);
   padding: 10px;
   cursor: pointer;
   z-index: 10;
@@ -151,7 +158,7 @@ body {
 }
 
 .carousel-next {
-  left: 1250px;
+  left: 1800px;
 }
 
 :is(.carousel-prev, .carousel-next):hover {
@@ -160,7 +167,8 @@ body {
 }
 
 #products {
-  padding: 150px;
+  padding: 150px 150px 50px 150px;
+  color: var(--secondary-color);
 }
 
 .products-section-header {
@@ -186,20 +194,55 @@ body {
   margin-bottom: 20px;
 }
 
+.products-grid-section {
+  background-color: #05455f27;
+  width: 100%;
+  padding: 30px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 40px;
   padding: 60px 20px;
-  background-color: wheat;
 }
 
 .product-card {
+  position: relative;
+  overflow: hidden;
   background-color: var(--primary-color);
-  border-radius: var(--radius);
+  border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   padding: 15px;
   text-align: center;
+}
+
+.product-card::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(110, 110, 110, 0.158);
+  transition: top 0.5s cubic-bezier(0.77, 0, 0.18, 1), opacity 0.5s;
+  opacity: 0.5;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.product-card:hover::before {
+  top: 0;
+  opacity: 0.7;
 }
 
 /* .colored {
@@ -251,12 +294,12 @@ body {
 
 :is(.btn-product):hover {
   transform: translateY(-8px);
-  background-color: #033548;
+  background-color: var(--secondary-color);
   color: var(--primary-color);
 }
 
 #customers {
-  background-color: var(--btn-bg);
+  background-color: var(--secondary-color);
   padding-top: 20px;
   text-align: center;
 }
@@ -294,14 +337,13 @@ body {
 }
 
 @keyframes scroll-left {
-  from { transform: translateX(0%); }
-  to { transform: translateX(-50%); }
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
-
-
-
-
-
 
 .contact {
   text-align: center;
@@ -309,8 +351,8 @@ body {
 }
 
 .main-footer {
-  background-color: var(--primary-color);
-  color: var(--text-color);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   padding: 30px 80px;
   text-align: center;
 }
@@ -332,12 +374,12 @@ body {
 
 .main-footer a {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--primary-color);
   transition: color 0.3s;
 }
 
 a:hover {
-  color: #423c3c;
+  color: #b1b1b1;
 }
 
 h5 {
@@ -379,7 +421,7 @@ b {
 }
 
 .icon {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .footer-bottom {

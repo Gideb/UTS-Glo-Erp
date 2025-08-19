@@ -30,6 +30,12 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+.contact-header {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
 .contact-info h2 {
   margin: 20px;
   color: var(--text-color);
