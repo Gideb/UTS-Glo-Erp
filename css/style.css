@@ -20,12 +20,26 @@ body {
 }
 
 .container {
-  margin: auto;
   background-color: var(--bg-color);
 }
 
+.top-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 40px;
+  background-color: #8b0101;
+  color: #eee;
+}
+
+.top-message a{
+  color: #eee;
+  text-decoration: underline;
+  padding-left: 20px;
+}
+
 .header-section {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -33,7 +47,7 @@ body {
   background-color: var(--primary-color);
   display: flex;
   align-items: center;
-  padding: 20px 150px;
+  padding: 10px 150px;
   justify-content: space-between;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   color: var(--text-color);
@@ -41,13 +55,16 @@ body {
 
 .header-section .logo {
   width: 100px;
+  position: relative;
+  top: 20px;
 }
 
-.header-nav ul {
+.header-nav  {
   display: flex;
+  position: relative;
+  bottom: 25px;
+  left: 1360px;
   gap: 10px;
-  margin-left: 600px;
-  margin-top: 20px;
 }
 
 .header-nav li {
