@@ -4,3 +4,26 @@
     box-sizing: border-box;
 }
 
+:root{
+    --secondary-color: #06475f;
+    --text-color: #06475f;
+}
+
+.hero-section {
+  text-align: center;
+  height: 90vh;
+  padding-top: 300px;
+  background: url(../images/glo-products/4.jpg);
+  background-size: cover;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+.hero-section p {
+  font-size: 1.3rem;
+  color: var(--text-color);
+  margin-bottom: 50px;
+}

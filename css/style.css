@@ -100,25 +100,6 @@ body {
   background-color: transparent !important;
 }
 
-/* 
-.hero-section {
-  text-align: center;
-  height: 80vh;
-  padding-top: 300px;
-}
-
-.hero-section h1 {
-  font-size: 3rem;
-  color: var(--text-color);
-  margin-bottom: 10px;
-}
-.hero-section p {
-  font-size: 1.3rem;
-  color: var(--text-color);
-  margin-bottom: 50px;
-}
-
-*/
 
 .cta-button {
   display: inline-block;
@@ -133,6 +114,7 @@ body {
 .cta-button:hover {
   background-color: var(--btn-bg);
   color: var(--primary-color);
+  border: none;
   transform: translateY(-8px);
 }
 
@@ -336,8 +318,17 @@ body {
 }
 
 .company-logo img {
-  width: 300px;
+  width: 200px;
   height: auto;
+  opacity: 0.6;
+  filter: grayscale(100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.company-logo img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: scale(1.1);
 }
 
 .marquee {
@@ -350,7 +341,7 @@ body {
 .marquee-content {
   display: flex;
   gap: 100px;
-  animation: scroll-left 15s linear infinite;
+  animation: scroll-left 20s linear infinite;
 }
 
 @keyframes scroll-left {
@@ -358,7 +349,7 @@ body {
     transform: translateX(0%);
   }
   to {
-    transform: translateX(-50%);
+    transform: translateX(-10%);
   }
 }
 
@@ -404,6 +395,11 @@ h5 {
   font-weight: 400;
   margin-bottom: 20px;
 }
+
+.uts-logo {
+  width: 50%;
+}
+
 
 .social-box {
   display: flex;

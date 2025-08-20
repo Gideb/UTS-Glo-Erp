@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --secondary-color: #060c5f;
+  --text-color: #120b50;
+  --darker-bg: #eee;
+}
+
+
+.about-section {
+  text-align: center;
+  padding: 60px 0;
+  color: var(--darker-bg);
+}
+
+.about-section h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.about-section p {
+  font-size: 1.3rem;
+  margin-bottom: 50px;
+}
+
+
+
+.hero-section {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.hero-section h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 20px 150px;
+}
+
+.hero-section img {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  padding: 50px 0;
+}
+
+#features, #installation {
+  background-color: var(--darker-bg);
+}
+
+.feature-grid-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 40px 0;
+  margin-bottom: 30px;
+   margin: auto;
+  width: 85%;
+}
+
+.feature-img {
+  flex: 1 1 40%;
+  max-width: 1000px;
+}
+
+.feature-img img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.feature-text {
+  flex: 2 1 60%;
+  font-size: 1.1rem;
+  text-align: justify;
+  line-height: 2;
+  margin: 0 20px;
+}
+
+
+.feature-text p {
+  font-size: 1rem;
+  margin: 1.2rem 0;
+}
+
+.demo {
+  text-align: center;
+  margin: 80px 0;
+}
+
+.demo h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.demo-video {
+  display: block;
+  margin: 0px auto;
+  width: 100%;
+  padding: 30px 0;
+}
+#installation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#installation h3 {
+    font-size: 1.5rem;
+  padding-top: 50px;
+
+}
+.installation {
+  text-align: center;
+  color: var(--darker-bg);
+  padding: 30px;
+  margin: 50px 150px;
+  align-items: center;
+}
+
+
+.installation-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin: 30px;
+}
+
+.installation-card {
+  background: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 30px 20px;
+  transition: transform 0.3s;
+  text-align: left;
+  color: var(--text-color);
+}
+
+.installation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.installation-card h4 {
+  margin-bottom: 15px;
+  color: var(--text-color);
+}
+
+@media (max-width: 900px) {
+  .feature-grid-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .feature-img,
+  .feature-text {
+    max-width: 100%;
+    flex: unset;
+  }
+}

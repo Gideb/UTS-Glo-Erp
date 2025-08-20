@@ -1,0 +1,137 @@
+:root {
+  --pos-color: #020884;
+  --hospital-color: #090331;
+  --ecommerce-color: #b88655;
+  --hotel-color: #842d02;
+  --hrms-color: #e17616;
+  --school-color: #fb0a2b;
+  --food-color: #e17616;
+  --pharmacy-color: #560b9c;
+
+}
+
+/* color for top message */
+.top-message.pos {
+  background-color: var(--pos-color);
+}
+.top-message.hms {
+  background-color: var(--hospital-color);
+}
+.top-message.ecommerce {
+  background-color: var(--ecommerce-color);
+}
+.top-message.school {
+  background-color: var(--school-color);
+}
+.top-message.pharmacy {
+  background-color: var(--pharmacy-color);
+}
+.top-message.hrms {
+  background-color: var(--hrms-color);
+}
+.top-message.hotel {
+  background-color: var(--hotel-color);
+}
+.top-message.food {
+  background-color: var(--food-color);
+}
+
+
+
+
+
+
+/* about-section banners */
+
+.about-section.pos {
+  background: url(../images/glo-products/banners/blue.jpg);
+  background-size: cover;
+}
+.about-section.hms {
+  background: url(../images/glo-products/banners/blue.jpg);
+  background-size: cover;
+}
+.about-section.ecommerce {
+  background: url(../images/glo-products/banners/blue.jpg);
+  background-size: cover;
+}
+.about-section.school {
+  background: url(../images/glo-products/banners/blue.jpg);
+  background-size: cover;
+}
+.about-section.pharmacy {
+  background: url(../images/glo-products/banners/blue.jpg);
+  background-size: cover;
+}
+.about-section.hrms {
+  background: url(../images/glo-products/banners/blue.jpg);
+  background-size: cover;
+}
+.about-section.hotel {
+  background: url(../images/glo-products/banners/blue.jpg);
+  background-size: cover;
+}
+.about-section.food {
+  background: url(../images/glo-products/banners/blue.jpg);
+  background-size: cover;
+}
+
+
+
+
+
+/* colors for feature text */
+.feature-text.pos {
+  color: var(--pos-color);
+}
+.feature-text.hms {
+  color: var(--hospital-color);
+}
+.feature-text.ecommerce {
+  color: var(--ecommerce-color);
+}
+.feature-text.school {
+  color: var(--school-color);
+}
+.feature-text.pharmacy {
+  color: var(--pharmacy-color);
+}
+.feature-text.hrms {
+  color: var(--hrms-color);
+}
+.feature-text.hotel {
+  color: var(--hotel-color);
+}
+.feature-text.food {
+  color: var(--food-color);
+}
+
+
+
+
+
+/* installation colors */
+.installation.pos {
+  background-color: var(--pos-color);
+}
+.installation.hms {
+  background-color: var(--hospital-color);
+}
+.installation.ecommerce {
+  background-color: var(--ecommerce-color);
+}
+.installation.school {
+  background-color: var(--school-color);
+}
+.installation.pharmacy {
+  background-color: var(--pharmacy-color);
+}
+.installation.hrms {
+  background-color: var(--hrms-color);
+}
+.installation.hotel {
+  background-color: var(--hotel-color);
+}
+.installation.food {
+  background-color: var(--food-color);
+}
