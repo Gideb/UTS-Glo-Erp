@@ -8,9 +8,10 @@
 :root {
   --text-color: #09769f;
   --btn-bg: #09769f;
-  --primary-color: #fefefe;
+  --primary-color: #fff;
   --secondary-color: #06475f;
   --radius: 5px;
+  --darker-bg: #eee;
 }
 
 body {
@@ -19,21 +20,17 @@ body {
   color: var(--text-color);
 }
 
-.container {
-  background-color: var(--bg-color);
-}
-
 .top-message {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px 40px;
   background-color: #8b0101;
-  color: #eee;
+  color: var(--darker-bg);
 }
 
 .top-message a{
-  color: #eee;
+  color: var(--darker-bg);
   text-decoration: underline;
   padding-left: 20px;
 }
@@ -63,7 +60,7 @@ body {
   display: flex;
   position: relative;
   bottom: 25px;
-  left: 1360px;
+  left: 1400px;
   gap: 10px;
 }
 
@@ -84,12 +81,7 @@ body {
   right: 10px;
   font-size: 1.2rem;
 }
-/* .active {
-  background-color: var(--btn-bg);
-  color: var(--primary-color) !important;
-  transition: all 0.8s ease-in;
-  margin: 0 -10px;
-} */
+
 
 .header-nav a:hover {
   background-color: #d3d3d3;
@@ -147,7 +139,7 @@ body {
   left: 20px;
   color: #141313;
   border: none;
-  background-color: #eee;
+  background-color: var(--darker-bg);
   border-radius: var(--radius);
   padding: 10px;
   cursor: pointer;
@@ -178,13 +170,15 @@ body {
 
 .products-section-header h3,
 .contact h4 {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   margin-bottom: 30px;
+  color: #252525;
 }
 
 .products-section-header h4 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .products-section-header p,
@@ -194,10 +188,10 @@ body {
 }
 
 .products-grid-section {
-  background-color: #05455f27;
+  background-color: var(--darker-bg);
   width: 100%;
   padding: 30px;
-  margin-top: 50px;
+  margin: 50px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -209,6 +203,7 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 40px;
   padding: 60px 20px;
+  width: 100%;
 }
 
 .product-card {
@@ -216,7 +211,7 @@ body {
   overflow: hidden;
   background-color: var(--primary-color);
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.322);
   padding: 15px;
   text-align: center;
 }
@@ -228,15 +223,15 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(110, 110, 110, 0.158);
-  transition: top 0.5s cubic-bezier(0.77, 0, 0.18, 1), opacity 0.5s;
+  background: rgba(1, 16, 82, 0.336);
+  transition: top 0.8s cubic-bezier(0.77, 0, 0.18, 1), opacity 0.5s;
   opacity: 0.5;
   z-index: 2;
   pointer-events: none;
 }
 
 .product-card:hover {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 10px rgba(65, 65, 65, 0.3);
 }
 
 .product-card:hover::before {
@@ -269,8 +264,7 @@ body {
 
 .btn-product {
   display: inline-block;
-  padding: 10px 15px;
-  background-color: var(--btn-bg);
+  padding: 15px 30px;
   color: var(--primary-color);
   border: none;
   border-radius: var(--radius);

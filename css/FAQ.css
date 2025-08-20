@@ -1,0 +1,33 @@
+
+
+.top-message {
+    background-color: #6e6e6e;
+}
+
+
+.faq-container {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+    color: #272727;
+}
+
+.faq  {
+    text-align: left;
+}
+
+.faq h2 {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.faq h4::before {
+    content: "\f007 ";
+    font-family: 'Font Awesome 7 Free';
+    font-weight: bold;
+}
+
+.faq p {
+    line-height: 2.5rem;
+    margin: 0 0 20px 30px;
+}

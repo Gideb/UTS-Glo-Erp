@@ -1,29 +1,232 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-:root{
-    --secondary-color: #06475f;
-    --text-color: #06475f;
+:root {
+  --text-color: #03445c;
+  --second-text-color: #1d1d1d;
+  --new-text: #eee;
+}
+
+.top-message {
+  background-color: #cecccc;
+  color: var(--second-text-color);
+}
+
+.top-message a {
+  color: var(--second-text-color);
 }
 
 .hero-section {
   text-align: center;
-  height: 90vh;
-  padding-top: 300px;
-  background: url(../images/glo-products/4.jpg);
+  padding: 70px 0;
+  background: url(../images/glo-products/banners/blue.jpg);
   background-size: cover;
 }
 
 .hero-section h1 {
-  font-size: 3rem;
-  color: var(--text-color);
+  font-size: 2rem;
+  color: var(--new-text);
   margin-bottom: 10px;
 }
 .hero-section p {
-  font-size: 1.3rem;
+  font-size: 1rem;
+  color: var(--new-text);
+  margin-bottom: 20px;
+}
+
+.cta-product {
+  color: var(--new-text);
+  border-color: var(--new-text);
+}
+
+#products,
+#benefits,
+#testimonials,
+#contact {
+  background-color: #eee;
+}
+
+#products {
+  background-color: #f9f9f9;
+}
+
+#about-erp {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0px;
+  max-width: 2100px;
+  margin: 20px auto;
+  position: relative;
+  left: -90px;
+}
+
+.about-erp {
+  border-radius: 18px;
+  padding: 50px 40px;
+  margin: 40px auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+.about-erp h2 {
   color: var(--text-color);
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.about-erp p {
+  color: var(--second-text-color);
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 18px;
+  text-align: justify;
+}
+
+.about-erp-img {
+  flex: 1 1 0;
+  max-width: 700px;
+  min-width: 400px;
+  height: auto;
+  position: relative;
+  right: 120px;
+  top: 20px;
+  opacity: 0.7;
+  filter: grayscale(60%);
+}
+
+.about-erp-img img {
+  width: 100%;
+  height: auto;
+}
+
+.about-erp,
+.benefits,
+.testimonials {
+  padding: 50px 150px;
+  text-align: center;
+}
+
+:is(.about-erp, .benefits, .testimonials) h2 {
+  color: var(--second-text-color);
+}
+
+.benefits h2 {
   margin-bottom: 50px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+}
+
+.benefits-grid > li {
+  position: relative;
+  overflow: hidden;
+  background: #f9f9f9;
+  box-shadow: 0 5px 10px rgba(27, 27, 27, 0.08);
+  padding: 30px 20px;
+  text-align: left;
+}
+
+.benefits-grid > li::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(1, 16, 82, 0.336);
+  transition: top 0.7s cubic-bezier(0.77, 0, 0.18, 1), opacity 0.5s;
+  opacity: 0.4;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.benefits-grid > li:hover::before {
+  top: 0;
+  opacity: 0.7;
+}
+
+.benefits-grid > li > strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: var(--text-color);
+}
+
+.benefits-grid > li > strong::before {
+  content: "\f085 ";
+  font-family: "Font Awesome 7 Free";
+  color: #926c3a;
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.benefits-grid ul {
+  margin-left: 0;
+  padding-left: 18px;
+  font-size: 0.98rem;
+  color: var(--second-text-color);
+}
+
+.benefits-grid ul li {
+  margin-bottom: 8px;
+}
+/* 
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.testimonial-card {
+  background: #f5fbfd;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(3, 68, 92, 0.08);
+  padding: 28px 20px;
+  position: relative;
+  text-align: left;
+}
+
+.testimonial-icon {
+  font-size: 2.5rem;
+  color: #03445c;
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  opacity: 0.2;
+}
+
+.testimonial-card p {
+  font-size: 1.08rem;
+  color: var(--second-text-color);
+  margin-bottom: 16px;
+  margin-top: 10px;
+}
+
+.testimonial-client {
+  font-size: 0.98rem;
+  color: #03445c;
+  font-weight: 600;
+}
+ */
+
+.contact {
+  background-color: var(--new-text);
+  padding: 50px 0;
+  margin-bottom: 0;
+}
+
+.cta-button {
+  margin: 10px;
 }
