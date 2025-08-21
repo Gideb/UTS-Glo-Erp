@@ -278,11 +278,6 @@ body {
   grid-column: 1 / -1;
 }
 
-/* .colored .btn-product {
-  background-color: var(--primary-color);
-  color: #033548;
-} */
-
 :is(.btn-product):hover {
   transform: translateY(-8px);
   background-color: var(--secondary-color);
@@ -470,8 +465,6 @@ b {
   }
 }
 
-
-
 @media (max-width: 1024px) {
   .header-section {
     padding: 10px 100px;
@@ -487,28 +480,67 @@ b {
 
   /* work on it */
   .carousel-next {
-    left: 935px;
+    left: 900px;
   }
 
   #products {
     padding: 20px 50px;
   }
 
-.products-section-header{
-  padding-top: 0;
-}
+  .products-section-header {
+    padding-top: 0;
+  }
 
   .products-grid-section {
     padding: 30px 10px;
   }
 
   .products-grid {
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 10px;
   }
+
+  .main-footer {
+    padding: 30px 50px;
+  }
+
+  .footer-container {
+    margin: 20px 30px;
+  }
+
+  .uts-logo {
+    width: 60%;
+  }
+
+  .col-1 {
+    width: 35%;
+  }
+
+  .col-2 nav, .col-3 nav {
+    padding-top: 25px;
+  }
+  strong {
+    font-size: 0.9rem;
+  }
+
+  b {
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+
+  .icon {
+    font-size: 1.7rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column-reverse;
+    margin-top: 20px;
+  }
+
+  .copyright-nav {
+    margin-bottom: 20px;
+  }
 }
-
-
 
 @media (max-width: 768px) {
   .header-section {
