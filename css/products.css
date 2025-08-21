@@ -19,6 +19,10 @@
   color: var(--second-text-color);
 }
 
+.header-nav {
+  left: 1400px;
+}
+
 .hero-section {
   text-align: center;
   padding: 70px 0;
@@ -136,14 +140,22 @@
   text-align: left;
 }
 
-.benefits-grid > li::before {
+.benefits-grid > li:hover {
+  box-shadow: 0 8px 16px rgba(141, 137, 137, 0.705);
+}
+
+.benefits-grid > li.colored {
+  background-color: #b3b0ab;
+}
+
+/* .benefits-grid > li::before {
   content: "";
   position: absolute;
   top: -100%;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(1, 16, 82, 0.336);
+  background: rgb(1, 16, 82);
   transition: top 0.7s cubic-bezier(0.77, 0, 0.18, 1), opacity 0.5s;
   opacity: 0.4;
   z-index: 2;
@@ -152,8 +164,9 @@
 
 .benefits-grid > li:hover::before {
   top: 0;
-  opacity: 0.7;
-}
+  opacity: 1;
+
+} */
 
 .benefits-grid > li > strong {
   display: block;
@@ -163,12 +176,31 @@
 }
 
 .benefits-grid > li > strong::before {
-  content: "\f085 ";
   font-family: "Font Awesome 7 Free";
-  color: #926c3a;
+  color: #754706;
   font-size: 2rem;
   display: block;
   margin-bottom: 10px;
+}
+
+.solution-icon::before {
+  content: "\f0eb ";
+}
+
+.user-friendly-icon::before {
+  content: "\f4fc ";
+}
+
+.customizable-icon::before {
+  content: "\f085 ";
+}
+
+.support-icon::before {
+  content: "\f590 ";
+}
+
+.secure-icon::before {
+  content: "\f023 ";
 }
 
 .benefits-grid ul {
