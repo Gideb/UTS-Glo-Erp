@@ -29,7 +29,7 @@ body {
   color: var(--darker-bg);
 }
 
-.top-message a{
+.top-message a {
   color: var(--darker-bg);
   text-decoration: underline;
   padding-left: 20px;
@@ -56,7 +56,7 @@ body {
   top: 20px;
 }
 
-.header-nav  {
+.header-nav {
   display: flex;
   position: relative;
   bottom: 25px;
@@ -82,7 +82,6 @@ body {
   font-size: 1.2rem;
 }
 
-
 .header-nav a:hover {
   background-color: #d3d3d3;
   color: #1d5971;
@@ -91,7 +90,6 @@ body {
 .fa-home:hover {
   background-color: transparent !important;
 }
-
 
 .cta-button {
   display: inline-block;
@@ -109,9 +107,6 @@ body {
   border: none;
   transform: translateY(-8px);
 }
-
-
-
 
 .carousel-container {
   position: relative;
@@ -397,7 +392,6 @@ h5 {
   width: 50%;
 }
 
-
 .social-box {
   display: flex;
   justify-content: flex-start;
@@ -455,4 +449,93 @@ b {
 
 .copyright-nav li:last-child:after {
   content: "";
+}
+
+/* Responsiveness */
+@media (max-width: 1440px) {
+  .header-nav {
+    left: 950px;
+  }
+
+  .contact-header {
+    max-width: 75%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header-section {
+    padding: 10px 100px;
+  }
+
+  .header-nav {
+    left: 650px;
+  }
+
+  .header-nav a {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-section {
+    padding: 8px 60px;
+  }
+
+  .header-nav {
+    left: 500px;
+  }
+
+  .header-nav a {
+    padding: 5px;
+  }
+
+  .fa-home {
+    bottom: 5px;
+    right: 8px;
+    font-size: 1.1rem;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 425px) {
+  .top-message {
+    padding: 10px 20px;
+    font-size: 0.7rem;
+  }
+
+  .header-section .logo {
+    width: 50px;
+    top: 10px;
+  }
+
+  .header-section {
+    padding: 8px 40px;
+    font-size: 0.8rem;
+  }
+
+  .header-nav {
+    left: 250px;
+    bottom: 10px;
+  }
+
+  .header-nav a {
+    padding: 1px;
+  }
+
+  .fa-home {
+    font-size: 0.7rem;
+    bottom: 2px;
+    right: 3px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header-nav {
+    left: 190px;
+  }
 }

@@ -254,4 +254,7 @@ form button:hover {
 }
 
 @media (max-width: 375px) {
+  .header-nav {
+    left: 190px;
+  }
 }
