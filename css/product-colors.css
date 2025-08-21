@@ -8,6 +8,7 @@
   --food-color: #e17616;
   --pharmacy-color: #560b9c;
   --second-text-color: #161616;
+   --secondary-color: #06475f;
 }
 
 /* color for top message */
@@ -162,7 +163,7 @@
 }
 
 /* read  more buttons */
-.btn-product.pos {
+/* .btn-product.pos {
   background-color: var(--pos-color);
 }
 .btn-product.hms {
@@ -204,3 +205,4 @@
 .btn-product.pos {
   background-color: var(--pos-color);
 }
+ */

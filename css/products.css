@@ -78,7 +78,7 @@
 
 .about-erp h2 {
   color: var(--text-color);
-  font-size: 1.6rem;
+  
   margin-bottom: 20px;
   font-weight: 700;
 }
@@ -109,16 +109,98 @@
 }
 
 .about-erp,
-.benefits,
-.testimonials {
+.benefits {
   padding: 50px 150px;
   text-align: center;
 }
 
-:is(.about-erp, .benefits, .testimonials) h2 {
+:is(.about-erp, .benefits, .contact) h2 {
   color: var(--second-text-color);
+  font-size: 1.6rem;
 }
 
+
+#benefits {
+      padding: 30px 20px;
+    }
+
+    #benefits h2 {
+      
+      text-align: center;
+      margin-bottom: 40px;
+     
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+
+    .benefits-grid li {
+      background: #fff;
+      padding: 25px;
+      border-radius: 7px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      text-align: left;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .benefits-grid li:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    }
+
+    .benefits-grid strong {
+      display: flex;
+      align-items: center;
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+      color: var(--text-color);
+      font-weight: 600;
+    }
+
+    .benefits-grid strong i {
+      margin-right: 10px;
+      font-size: 1.3rem;
+      color: var(--text-color);
+      transition: transform 0.3s;
+    }
+
+    .benefits-grid li:hover strong i {
+      transform: scale(1.2);
+    }
+
+    .benefits-grid ul {
+      padding-left: 20px;
+    }
+
+    .benefits-grid ul li {
+      margin-bottom: 6px;
+      color: #555;
+    }
+
+    /* Colored (accent) cards */
+    .benefits-grid li.colored {
+      background: linear-gradient(135deg, #03445c, #04446e);
+      color: white;
+    }
+
+    .benefits-grid li.colored strong,
+    .benefits-grid li.colored strong i {
+      color: white; 
+    }
+
+    .benefits-grid li.colored ul li {
+      color: #666665;
+    }
+
+
+/* 
 .benefits h2 {
   margin-bottom: 50px;
 }
@@ -166,7 +248,7 @@
   top: 0;
   opacity: 1;
 
-} */
+} 
 
 .benefits-grid > li > strong {
   display: block;
@@ -177,7 +259,7 @@
 
 .benefits-grid > li > strong::before {
   font-family: "Font Awesome 7 Free";
-  color: #754706;
+  color: #050369;
   font-size: 2rem;
   display: block;
   margin-bottom: 10px;
@@ -213,6 +295,8 @@
 .benefits-grid ul li {
   margin-bottom: 8px;
 }
+
+*/
 /* 
 .testimonials-grid {
   display: grid;
@@ -256,7 +340,8 @@
 .contact {
   background-color: var(--new-text);
   padding: 50px 0;
-  margin-bottom: 0;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .cta-button {

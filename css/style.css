@@ -268,6 +268,9 @@ body {
   border-radius: var(--radius);
   margin-top: 20px;
   text-decoration: none;
+  border: 1px solid var(--text-color);
+  color: #06475f;
+  background-color: transparent;
   transition: transform 0.3s ease, background-color 0.3s, color 0.3s;
 }
 
