@@ -25,6 +25,6 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     return;
   }
 
-  alert("Thank you, " + name + "! Your message has been sent.");
+  alert("Thank you, " + name + "! Your form has been submitted.");
   this.reset();
 });
