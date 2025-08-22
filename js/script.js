@@ -1,34 +1,43 @@
 document.addEventListener("DOMContentLoaded", () => {
   const slides = document.querySelectorAll(".carousel-slide");
+  const slidesContainer = document.querySelector(".carousel-slides");
   const prevBtn = document.querySelector(".carousel-prev");
   const nextBtn = document.querySelector(".carousel-next");
 
   let currentSlide = 0;
+  let interval;
 
   function showSlide(index) {
-    slides.forEach((slide) => {
-      slide.classList.remove("active-slide");
-    });
+    currentSlide = (index + slides.length) % slides.length;
+    slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+  }
 
-    slides[index].classList.add("active-slide");
+  function startAutoSlide() {
+    interval = setInterval(() => {
+      showSlide(currentSlide + 1);
+    }, 3000);
+  }
+
+  function stopAutoSlide() {
+    clearInterval(interval);
   }
 
   prevBtn.addEventListener("click", () => {
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-    showSlide(currentSlide);
+    showSlide(currentSlide - 1);
   });
 
   nextBtn.addEventListener("click", () => {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
+    showSlide(currentSlide + 1);
   });
 
-  showSlide(currentSlide);
+  // Pause on hover
+  const carousel = document.querySelector(".carousel-container");
+  carousel.addEventListener("mouseenter", stopAutoSlide);
+  carousel.addEventListener("mouseleave", startAutoSlide);
 
-  setInterval(() => {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
-  }, 3000);
+  // Init
+  showSlide(currentSlide);
+  startAutoSlide();
 });
 
 document.getElementById("copyright-date").textContent =
