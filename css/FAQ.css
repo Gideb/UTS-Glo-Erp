@@ -6,6 +6,16 @@
   left: 1400px;
 }
 
+.about-section {
+  background-image: url(../images/faq-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+  text-align: center;
+  color: white;
+  padding-top: 100px;
+}
+
 .faq-container {
   width: 80%;
   margin: 50px auto;

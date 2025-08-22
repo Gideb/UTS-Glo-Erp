@@ -22,13 +22,24 @@ body {
 }
 
 .contact-header {
-  text-align: center;
-  max-width: 60%;
   margin: 100px auto;
+  margin-top: 0;
+  background-image: url(../images/contact-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 30vh;
+  text-align: center;
+  color: white;
+  padding-top: 100px;
+
 }
 
 .contact-header h2 {
   margin-bottom: 10px;
+}
+.contact-header p {
+  max-width: 60%;
+  margin: auto;
 }
 
 .contact-container {

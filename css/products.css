@@ -138,7 +138,7 @@
       list-style: none;
       padding: 0;
       margin: 0 auto;
-      max-width: 1200px;
+    
     }
 
     .benefits-grid li {
@@ -181,7 +181,8 @@
 
     .benefits-grid ul li {
       margin-bottom: 6px;
-      color: #555;
+      color: #080808;
+  /*     background-color: #04446e; */
     }
 
     /* Colored (accent) cards */
@@ -196,7 +197,8 @@
     }
 
     .benefits-grid li.colored ul li {
-      color: #666665;
+      color: #080808;
+      background-color: #d7eaf7;
     }
 
 
@@ -340,7 +342,6 @@
 .contact {
   background-color: var(--new-text);
   padding: 50px 0;
-  width: 100%;
   margin: 0 auto;
 }
 
