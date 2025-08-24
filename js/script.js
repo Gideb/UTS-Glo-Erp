@@ -27,7 +27,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   nextBtn.addEventListener("click", () => {
+    
     showSlide(currentSlide + 1);
+    
   });
 
   // Pause on hover

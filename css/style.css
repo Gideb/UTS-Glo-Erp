@@ -299,12 +299,30 @@ body {
   font-size: 1.2rem;
   font-weight: normal;
 }
+
 .company-logo-container {
   margin: 50px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 130px;
+  animation: scroll-left 20s linear infinite;
+}
+
+.marquee-content:hover {
+  animation-play-state: paused;
 }
 
 .company-logo img {
@@ -321,25 +339,12 @@ body {
   transform: scale(1.1);
 }
 
-.marquee {
-  width: 100%;
-  overflow: hidden;
-
-  padding: 10px 0;
-}
-
-.marquee-content {
-  display: flex;
-  gap: 130px;
-  animation: scroll-left 20s linear infinite;
-}
-
 @keyframes scroll-left {
   from {
-    transform: translateX(0%);
+    transform: translateX(0);
   }
   to {
-    transform: translateX(-15%);
+    transform: translateX(-25%);
   }
 }
 
