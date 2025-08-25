@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function startAutoSlide() {
     interval = setInterval(() => {
       showSlide(currentSlide + 1);
-    }, 3000);
+    }, 5000);
   }
 
   function stopAutoSlide() {
@@ -27,9 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   nextBtn.addEventListener("click", () => {
-    
     showSlide(currentSlide + 1);
-    
   });
 
   // Pause on hover
