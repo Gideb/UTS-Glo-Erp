@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function showSlide(index) {
     currentSlide = (index + slides.length) % slides.length;
-    slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+``    slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
   }
 
   function startAutoSlide() {
