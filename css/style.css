@@ -479,7 +479,7 @@ b {
     padding: 10px 90px;
   }
   .header-nav {
-    left: 700px;
+    left: 750px;
   }
 
   .header-nav a {
@@ -489,13 +489,14 @@ b {
   .carousel-prev,
   .carousel-next {
     bottom: 300px;
+    padding: 10px 15px 40px 15px;
   }
   .carousel-slide {
     height: 60vh;
   }
 
   .carousel-next {
-    left: 1060px;
+    left: 1120px;
   }
 
   #products {
