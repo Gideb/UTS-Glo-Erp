@@ -10,6 +10,15 @@
   --darker-bg: #eee;
 }
 
+.logox {
+  width: 25%;
+}
+
+.fa-bars,
+.fa-close {
+  display: none;
+}
+
 .about-section {
   text-align: center;
   padding: 90px 0;
@@ -216,20 +225,11 @@ h3 {
 }
 
 @media only screen and (max-width: 768px) {
-  .header-section {
-    padding: 10px 70px;
+  .fa-bars,
+  .fa-close {
+    visibility: visible;
   }
 
-  .header-nav {
-    left: 440px;
-  }
-  .header-section .logo {
-    width: 80px;
-  }
-
-  .header-nav a {
-    font-size: 14px;
-  }
   .fa-home {
     bottom: 3px;
     font-size: 0.8rem;

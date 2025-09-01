@@ -16,15 +16,20 @@
 
 body {
   background-color: var(--primary-color);
-  transition: all 0.5s ease;
+  transition: all 0.8s ease;
   color: var(--text-color);
 }
+
+/* .main-container {
+  width: 85%;
+  margin: 0 auto;
+} */
 
 .top-message {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 40px;
+  padding: 5px 0;
   background-color: #c9780e;
   color: var(--darker-bg);
 }
@@ -42,20 +47,67 @@ body {
   width: 100%;
   z-index: 1000;
   background-color: var(--primary-color);
-  display: flex;
+
+  /* display: flex;
   align-items: center;
-  padding: 10px 150px;
-  justify-content: space-between;
+  justify-content: space-between; */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   color: var(--text-color);
 }
 
-.header-section .logo {
+.menulogo {
+  margin: 0 auto;
+  width: 85%;
+  min-height: 85px;
+  /*  display: flex;
+  justify-content: space-around;
+  align-items: center; */
+}
+
+.logox {
+  position: relative;
+  float: left;
+  width: 20%;
+  /*  background-color: red; */
+}
+
+.logox img {
+  width: 45%;
+}
+
+.menux {
+  width: 40%;
+  float: right;
+  position: relative;
+  /* background-color: rgb(9, 255, 0); */
+}
+
+.menux ul {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.menux ul li {
+  margin: 20px;
+  padding: 5px;
+  list-style: none;
+}
+
+.menux ul li a {
+  text-decoration: none;
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  color: #0479a7;
+}
+
+/* .header-section .logo {
   width: 100px;
   position: relative;
   top: 20px;
-}
-
+} */
+/* 
 .header-nav {
   display: flex;
   position: relative;
@@ -67,8 +119,8 @@ body {
 .header-nav li {
   list-style: none;
 }
-
-.header-nav a {
+*/
+.menux a {
   text-decoration: none;
   color: var(--text-color);
   padding: 10px 15px;
@@ -77,14 +129,18 @@ body {
 
 .fa-home {
   position: relative;
-  bottom: 11px;
-  right: 10px;
+  right: 3px;
   font-size: 1.2rem;
 }
 
-.header-nav a:hover {
+.menux a:hover {
   background-color: #d3d3d3;
   color: #1d5971;
+}
+
+.fa-bars,
+.fa-close {
+  display: none;
 }
 
 .fa-home:hover {
@@ -102,7 +158,7 @@ body {
 }
 
 .cta-button:hover {
-  background-color: var(--btn-bg);
+  background-color: var(--secondary-color);
   color: var(--primary-color);
   border: none;
   transform: translateY(-8px);
@@ -357,15 +413,14 @@ body {
 .main-footer {
   background-color: var(--secondary-color);
   color: var(--primary-color);
-  padding: 30px 80px;
   text-align: center;
+  padding: 30px 8%;
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
   align-items: center top;
-  margin: 20px 50px;
 }
 
 .footer-column {
@@ -392,8 +447,8 @@ a:hover {
   margin-bottom: 20px;
 }
 
-.uts-logo {
-  width: 50%;
+.glo-footer-logo {
+  width: 35%;
 }
 
 .social-box {
@@ -413,7 +468,7 @@ a:hover {
 }
 
 .col-1 {
-  width: 25%;
+  width: 30%;
   text-align: justify;
 }
 
@@ -424,7 +479,6 @@ a:hover {
 
 .col-3 {
   overflow: auto;
-  width: 30%;
 }
 
 .col-3 a,
@@ -444,6 +498,10 @@ b {
   font-size: 0.9rem;
   font-weight: 600;
   margin-left: 50px;
+}
+
+hr {
+  margin: 15px auto;
 }
 
 .icon {
@@ -475,34 +533,24 @@ b {
 
 /* Responsiveness */
 @media only screen and (max-width: 1440px) {
-  .header-section {
-    padding: 10px 90px;
-  }
-  .header-nav {
-    left: 750px;
-  }
-
-  .header-nav a {
-    padding: 8px;
-  }
-
-  .carousel-prev,
+  /* .carousel-prev,
   .carousel-next {
-    bottom: 300px;
-    padding: 10px 15px 40px 15px;
-  }
+    /* bottom: 300px; */
+  /* padding: 10px 15px 40px 15px; *
+  } 
+  */
   .carousel-slide {
-    height: 60vh;
+    height: 50vh;
   }
 
   .carousel-next {
-    left: 1120px;
+    left: 1380px;
   }
 
-  #products {
+  /* #products {
     padding: 100px 50px 50px 50px;
   }
-
+ */
   .products-section-header h4 {
     font-size: 1rem;
   }
@@ -521,9 +569,9 @@ b {
     gap: 10px;
   }
 
-  .main-footer {
+  /*  .main-footer {
     padding: 30px 40px;
-  }
+  } */
   .main-footer h5 {
     font-size: 1rem;
   }
@@ -532,7 +580,7 @@ b {
     font-size: 0.85rem;
   }
 
-  .footer-container {
+  /*  .footer-container {
     margin: 20px;
     justify-content: space-evenly;
     gap: 60px;
@@ -541,20 +589,19 @@ b {
   .footer-column {
     padding-left: 20px;
     margin: inherit auto;
-  }
+  } */
 
-  .col-1,
+  /*  .col-1,
   .col-3 {
     width: 40%;
-  }
+  } */
 
   .dash {
-    border-top: 1px solid #ccc;
     margin-right: 90px;
   }
 
   .col-3 .dash {
-    margin-right: 320px;
+    margin-right: 160px;
   }
   .icon {
     font-size: 1.5rem;
@@ -562,33 +609,35 @@ b {
 }
 
 @media only screen and (max-width: 1024px) {
-  .header-section {
-    padding: 10px 80px;
+  .logox img {
+    margin-top: 20px;
   }
 
-  .header-nav {
-    left: 600px;
+  .menux ul li {
+    margin: 20px 2px;
+    padding: 1px;
+    list-style: none;
   }
 
-  .header-nav a {
-    padding: 7px;
+  .menux ul li a {
+    font-size: 1rem;
   }
 
   .carousel-next {
-    left: 900px;
+    left: 970px;
+  }
+
+  #products {
+    padding: 50px;
+  }
+
+  .products-section-header {
+    width: 80%;
   }
 
   .products-grid {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 10px;
-  }
-
-  .uts-logo {
-    width: 40%;
-  }
-
-  .col-3 {
-    overflow: visible;
   }
 
   .col-3 strong {
@@ -598,10 +647,6 @@ b {
   .col-3 b {
     font-size: 0.8rem;
     font-weight: 550;
-  }
-
-  .icon {
-    font-size: 1.5rem;
   }
 
   .footer-bottom {
@@ -615,45 +660,94 @@ b {
 }
 
 @media only screen and (max-width: 768px) {
-  .header-section {
-    padding: 8px 40px;
+  .logox img {
+    width: 60%;
   }
 
-  .header-nav {
-    left: 450px;
+  .menux {
+    display: none;
   }
 
-  .header-nav a {
-    padding: 5px;
+  .fa-bars {
+    display: block;
+    position: relative;
+    float: right;
+    top: 23px;
+    left: 10px;
+    font-size: 25px;
+    font-weight: bolder;
+  }
+
+  .fa-close {
+    display: block;
+    font-size: 25px;
+    position: absolute;
+    top: 22px;
+    left: 75%;
+    color: white;
+  }
+
+  .sidenav {
+    display: block;
+    background-color: #06475f;
+    height: 100vh;
+    max-width: 40vw;
+    width: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 0.8s ease;
+    z-index: 1000;
+  }
+
+  .sidenav ul {
+    display: block;
+    padding: 100px 30px;
+    width: 100%;
+  }
+
+  .sidenav ul li {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px 0;
+  }
+
+  .sidenav ul li a {
+    font-size: 1.2rem;
+    color: white;
+  }
+  .sidenav ul li a:hover,
+  .sidenav ul li a:focus {
+    background-color: none;
+    color: #06475f;
+  }
+
+  .sidenav ul li:hover,
+  .sidenav ul li:focus {
+    background-color: #ccc;
+    width: 100%;
   }
 
   .fa-home {
-    bottom: 5px;
-    right: 8px;
-    font-size: 1rem;
+    visibility: hidden;
   }
 
   .carousel-slide {
-    height: 70vh;
-    width: fit-content;
+    height: 60vh;
   }
 
   .carousel-next {
-    left: 660px;
-  }
-  .carousel-next,
-  .carousel-prev {
-    bottom: 400px;
+    left: 700px;
   }
 
   #products {
-    margin: auto 80px;
-    padding: 0;
+    margin: 30px auto;
+  }
+  .products-section-header {
+    width: 100%;
   }
 
-  .products-section-header {
-    width: 90%;
-  }
+  /* 
 
   .products-section-header h4 {
     font-size: 1rem;
@@ -666,7 +760,7 @@ b {
   .products-grid-section {
     padding: 20px 70px;
   }
-
+ */
   .products-grid {
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 30px;
@@ -682,10 +776,6 @@ b {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto;
     gap: 20px;
-  }
-
-  .uts-logo img {
-    width: 40%;
   }
 
   .col-1 {
@@ -705,8 +795,7 @@ b {
     margin-bottom: 40px;
   }
 
-  .col-1,
-  .col-3 {
+  .col-1 {
     width: 100%;
   }
 
@@ -717,4 +806,7 @@ b {
   .list-link a {
     font-size: 0.8rem;
   }
+}
+
+@media only screen and (max-width: 425px) {
 }

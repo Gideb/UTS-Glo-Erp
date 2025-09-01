@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/singleProduct.css" />
     <link rel="stylesheet" href="../css/product-colors.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/192436698a.js"
       crossorigin="anonymous"
@@ -20,17 +24,25 @@
     </div>
 
     <header class="header-section">
-      <div>
-        <a href="../index.html">
-          <img class="logo" src="../images/glo-logo.png" alt="glo-erp logo" />
-        </a>
-        <nav>
-          <ul class="header-nav">
-            <li><a class="fa-solid fa-home" href="#"></a></li>
-            <li><a href="../products.html">Products</a></li>
-            <li><a href="../contact.html">Contact</a></li>
-          </ul>
-        </nav>
+      <div class="menulogo">
+        <div class="logox">
+          <img src="../images/glo-logo.png" alt="glo-erp logo" />
+        </div>
+        <div class="menux sidenav">
+          <nav>
+            <ul>              
+              <li><a class="fa-solid fa-home" href="#"></a></li>
+              <li><a href="../products.html">Products</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+              <li><a href="../faq.html">FAQs</a></li>
+            </ul>
+          <span
+              class="fa-solid fa-close closebtn"
+              onclick="closebtn()"
+            ></span>
+          </nav>
+        </div>
+        <span class="fa-solid fa-bars" onclick="sidenavbtn()"></span>
       </div>
     </header>
     <main>
@@ -154,9 +166,9 @@
           <div class="logo">
             <a href="../index.html"
               ><img
-                class="uts-logo"
-                src="../images/uts-logo.png"
-                alt="uts development logo"
+                class="glo-footer-logo"
+                src="../images/glo-logo-faded.png"
+                alt="gloErp logo faded"
             /></a>
           </div>
           <div class="text">
@@ -205,7 +217,7 @@
           <nav>
             <ul class="list-link">
               <li>
-                <a href="https://www.utsdevelopers.com/about">About UTS</a>
+                <a href="https://utsdevelopers.com/about">About UTS</a>
               </li>
               <li><a href="../index.html">Home</a></li>
               <li><a href="../products.html">Products</a></li>
@@ -257,10 +269,7 @@
       <hr />
 
       <div class="footer-bottom">
-        <div class="copyright">
-          Copyright © <span id="copyright-date"></span> UTS Developers Ltd. All
-          Rights Reserved.
-        </div>
+        <div class="copyright">Powered By UTS Developers Limited.</div>
 
         <div>
           <ul class="copyright-nav">
@@ -275,5 +284,7 @@
       </div>
     </footer>
     <?php include '../footer.php'; ?>
+    <script src="../js/script.js"></script>
+
   </body>
 </html>

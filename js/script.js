@@ -40,5 +40,12 @@ document.addEventListener("DOMContentLoaded", () => {
   startAutoSlide();
 });
 
-document.getElementById("copyright-date").textContent =
-  new Date().getFullYear();
+const sidenav = document.querySelector(".sidenav");
+
+function sidenavbtn() {
+  sidenav.style.width = "100%";
+}
+
+function closebtn() {
+  sidenav.style.width = "0";
+}

@@ -18,9 +18,9 @@
     </div>
 
     <header class="header-section">
-      <div>
+      <!-- <div>
         <a href="index.html">
-          <img class="logo" src="./images/glo-logo.png" alt="glo-erp logo" />
+          <img class="logo" src="../images/glo-logo.png" alt="glo-erp logo" />
         </a>
         <nav>
           <ul class="header-nav">
@@ -29,6 +29,28 @@
             <li><a href="faq.html">FAQs</a></li>
           </ul>
         </nav>
+      </div> -->
+
+      <div class="menulogo">
+        <div class="logox">
+          <a href="index.html">
+            <img src="images/glo-logo.png" alt="glo-erp logo" />
+          </a>
+        </div>
+        <div class="menux sidenav">
+          <nav>
+            <ul>
+              <li><a class="fa-solid fa-home" href="#"></a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="faq.html">FAQs</a></li>
+            </ul>
+            <span
+              class="fa-solid fa-close closebtn"
+              onclick="closebtn()"
+            ></span>
+          </nav>
+        </div>
+        <span class="fa-solid fa-bars" onclick="sidenavbtn()"></span>
       </div>
     </header>
 
@@ -80,7 +102,7 @@
           width="600"
           height="450"
           style="border: 0"
-          allowfullscreen=""
+          allowfullscreen
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
@@ -137,9 +159,9 @@
           <div class="logo">
             <a href="index.html"
               ><img
-                class="uts-logo"
-                src="images/uts-logo.png"
-                alt="uts development logo"
+                class="glo-footer-logo"
+                src="../images/glo-logo-faded.png"
+                alt="gloErp logo faded"
             /></a>
           </div>
           <div class="text">
@@ -190,9 +212,10 @@
                 <a href="https://www.utsdevelopers.com/about">About UTS</a>
               </li>
               <li><a href="index.html">Home</a></li>
-              <li><a href="products.html">Products</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="faq.html">FAQs</a></li>
+
+              <li><a href="../products.html">Products</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+              <li><a href="../faq.html">FAQs</a></li>
               <li>
                 <a href="https://utsdevelopers.com/clientsarea/login"
                   >Client &amp; Support Portal</a
@@ -238,10 +261,7 @@
       <hr />
 
       <div class="footer-bottom">
-        <div class="copyright">
-          Copyright © <span id="copyright-date"></span> UTS Developers Ltd. All
-          Rights Reserved.
-        </div>
+        <div class="copyright">Powered By UTS Developers Limited.</div>
 
         <div>
           <ul class="copyright-nav">
@@ -257,5 +277,6 @@
     </footer>
 
     <script src="./js/contact.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

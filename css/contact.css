@@ -17,21 +17,19 @@ body {
   background-color: #fff;
 }
 
-.header-nav {
-  left: 1300px;
+.fa-bars, .fa-close {
+  display: none;
 }
 
 .contact-header {
-  margin: 100px auto;
-  margin-top: 0;
+  margin: 0 auto;
   background-image: url(../images/contact-bg.jpg);
   background-position: center;
   background-size: cover;
-  height: 30vh;
+  height: 40vh;
   text-align: center;
   color: white;
-  padding-top: 100px;
-
+  padding-top: 150px;
 }
 
 .contact-header h2 {
@@ -44,7 +42,7 @@ body {
 
 .contact-container {
   max-width: 1000px;
-  margin: 150px auto;
+  margin: 100px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
@@ -143,12 +141,18 @@ form button:hover {
   background: #023b51;
 }
 
-/* Responsiveness */
-@media (max-width: 1440px) {
-  .header-nav {
-    left: 950px;
-  }
+.main-footer,
+.main-footer a {
+  color: #fff;
+}
 
+.main-footer a:hover {
+  color: #cacaca;
+}
+
+/* Responsiveness */
+
+@media (max-width: 1440px) {
   .contact-header {
     max-width: 100%;
   }
@@ -160,18 +164,6 @@ form button:hover {
 }
 
 @media (max-width: 1024px) {
-  .header-section {
-    padding: 10px 100px;
-  }
-
-  .header-nav {
-    left: 650px;
-  }
-
-  .header-nav a {
-    padding: 10px;
-  }
-
   .contact-container {
     max-width: 950px;
     padding: 30px;
@@ -179,18 +171,6 @@ form button:hover {
 }
 
 @media (max-width: 768px) {
-  .header-section {
-    padding: 8px 60px;
-  }
-
-  .header-nav {
-    left: 500px;
-  }
-
-  .header-nav a {
-    padding: 5px;
-  }
-
   .fa-home {
     bottom: 5px;
     right: 8px;
@@ -208,25 +188,6 @@ form button:hover {
   .top-message {
     padding: 10px 20px;
     font-size: 0.7rem;
-  }
-
-  .header-section .logo {
-    width: 50px;
-    top: 10px;
-  }
-
-  .header-section {
-    padding: 8px 40px;
-    font-size: 0.8rem;
-  }
-
-  .header-nav {
-    left: 250px;
-    bottom: 10px;
-  }
-
-  .header-nav a {
-    padding: 1px;
   }
 
   .fa-home {
@@ -261,11 +222,5 @@ form button:hover {
   .contact-info h2 {
     margin-bottom: 40px;
     text-align: center;
-  }
-}
-
-@media (max-width: 375px) {
-  .header-nav {
-    left: 190px;
   }
 }

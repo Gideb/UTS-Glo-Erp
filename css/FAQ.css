@@ -2,8 +2,9 @@
   background-color: #6e6e6e;
 }
 
-.header-nav {
-  left: 1400px;
+
+.fa-bars, .fa-close {
+  display: none;
 }
 
 .about-section {
@@ -44,13 +45,6 @@
 }
 
 @media only screen and (max-width: 1440px) {
-  .header-section {
-    padding: 10px 100px;
-  }
-  .header-nav {
-    left: 770px;
-  }
-
   .faq-container {
     width: 85%;
   }
@@ -69,14 +63,6 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .header-section {
-    padding: 10px 80px;
-  }
-
-  .header-nav {
-    left: 670px;
-  }
-
   .faq h2 {
     font-size: 1.6rem;
   }
@@ -91,17 +77,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .header-section {
-    padding: 10px 50px;
-  }
-
-  .header-nav {
-    left: 500px;
-  }
-
-  .header-nav a {
-    font-size: 13px;
-  }
   .faq h2 {
     font-size: 1.4rem;
   }

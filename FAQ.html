@@ -6,6 +6,10 @@
     <title>GLO-Erp | FAQs</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/FAQ.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/192436698a.js"
       crossorigin="anonymous"
@@ -19,9 +23,9 @@
     </div>
 
     <header class="header-section">
-      <div>
+      <!-- <div>
         <a href="index.html">
-          <img class="logo" src="./images/glo-logo.png" alt="glo-erp logo" />
+          <img class="logo" src="../images/glo-logo.png" alt="glo-erp logo" />
         </a>
         <nav>
           <ul class="header-nav">
@@ -30,6 +34,29 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
+      </div> -->
+
+      <div class="menulogo">
+        <div class="logox">
+          <a href="index.html">
+            <img src="images/glo-logo.png" alt="glo-erp logo" />
+          </a>
+        </div>
+        <div class="menux sidenav">
+          <nav>
+            <ul>
+              <li><a class="fa-solid fa-home" href="#"></a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <span
+              class="fa-solid fa-close closebtn"
+              onclick="closebtn()"
+            ></span>
+          </nav>
+        </div>
+        <span class="fa-solid fa-bars" onclick="sidenavbtn()"></span>
       </div>
     </header>
 
@@ -40,34 +67,34 @@
           <p>Your questions answered about GLO-ERP solutions</p>
         </div>
       </section>
-    </main>
 
-    <div class="faq-container">
-      <section id="faq" class="faq">
-        <h2>... Here Are Answers To Some Frequently Asked Questions ...</h2>
-        <div class="faq-item">
-          <h4>: Can GLO-ERP be customized for my business?</h4>
-          <p>
-            Yes, our solutions are fully customizable to fit your specific
-            requirements.
-          </p>
-        </div>
-        <div class="faq-item">
-          <h4>: Is training provided?</h4>
-          <p>
-            We offer comprehensive training and ongoing support for all our
-            products.
-          </p>
-        </div>
-        <div class="faq-item">
-          <h4>: How secure is my data?</h4>
-          <p>
-            GLO-ERP uses advanced security protocols to keep your data safe and
-            confidential.
-          </p>
-        </div>
-      </section>
-    </div>
+      <div class="faq-container">
+        <section id="faq" class="faq">
+          <h2>... Here Are Answers To Some Frequently Asked Questions ...</h2>
+          <div class="faq-item">
+            <h4>: Can GLO-ERP be customized for my business?</h4>
+            <p>
+              Yes, our solutions are fully customizable to fit your specific
+              requirements.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4>: Is training provided?</h4>
+            <p>
+              We offer comprehensive training and ongoing support for all our
+              products.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4>: How secure is my data?</h4>
+            <p>
+              GLO-ERP uses advanced security protocols to keep your data safe
+              and confidential.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
 
     <footer class="main-footer">
       <div class="footer-container">
@@ -75,9 +102,9 @@
           <div class="logo">
             <a href="index.html"
               ><img
-                class="uts-logo"
-                src="images/uts-logo.png"
-                alt="uts development logo"
+                class="glo-footer-logo"
+                src="../images/glo-logo-faded.png"
+                alt="gloErp logo faded"
             /></a>
           </div>
           <div class="text">
@@ -128,9 +155,9 @@
                 <a href="https://www.utsdevelopers.com/about">About UTS</a>
               </li>
               <li><a href="index.html">Home</a></li>
-              <li><a href="products.html">Products</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="faq.html">FAQs</a></li>
+              <li><a href="../products.html">Products</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+              <li><a href="../faq.html">FAQs</a></li>
               <li>
                 <a href="https://utsdevelopers.com/clientsarea/login"
                   >Client &amp; Support Portal</a
@@ -176,10 +203,7 @@
       <hr />
 
       <div class="footer-bottom">
-        <div class="copyright">
-          Copyright © <span id="copyright-date"></span> UTS Developers Ltd. All
-          Rights Reserved.
-        </div>
+        <div class="copyright">Powered By UTS Developers Limited.</div>
 
         <div>
           <ul class="copyright-nav">
@@ -193,5 +217,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>

@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/products.css" />
     <link rel="stylesheet" href="./css/product-colors.css" />
+     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/192436698a.js"
       crossorigin="anonymous"
@@ -20,9 +24,9 @@
     </div>
 
     <header class="header-section">
-      <div>
+      <!-- <div>
         <a href="index.html">
-          <img class="logo" src="./images/glo-logo.png" alt="glo-erp logo" />
+          <img class="logo" src="../images/glo-logo.png" alt="glo-erp logo" />
         </a>
         <nav>
           <ul class="header-nav">
@@ -31,6 +35,28 @@
             <li><a href="faq.html">FAQs</a></li>
           </ul>
         </nav>
+      </div> -->
+
+      <div class="menulogo">
+        <div class="logox">
+          <a href="index.html">
+            <img src="images/glo-logo.png" alt="glo-erp logo" />
+          </a>
+        </div>
+        <div class="menux sidenav">
+          <nav>
+            <ul>
+              <li><a class="fa-solid fa-home" href="#"></a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="faq.html">FAQs</a></li>
+            </ul>
+            <span
+              class="fa-solid fa-close closebtn"
+              onclick="closebtn()"
+            ></span>
+          </nav>
+        </div>
+        <span class="fa-solid fa-bars" onclick="sidenavbtn()"></span>
       </div>
     </header>
 
@@ -79,7 +105,7 @@
       </div>
       <div class="about-erp-img">
         <img
-          src="./images/glo-products/banners/workplace.jpg"
+          src="../images/glo-products/banners/workplace.jpg"
           alt="about image"
         />
       </div>
@@ -169,7 +195,7 @@
           <div class="products-grid">
             <div class="product-card">
               <img
-                src="./images/glo-products/glo-POS.jpg"
+                src="../images/glo-products/glo-POS.jpg"
                 alt="GLO POS With Inventory Management System"
                 width="300px"
               />
@@ -186,7 +212,7 @@
             </div>
             <div class="product-card">
               <img
-                src="./images/glo-products/glo-hms.jpg"
+                src="../images/glo-products/glo-hms.jpg"
                 alt="Hotel Management System"
                 width="300px"
               />
@@ -201,7 +227,7 @@
             </div>
             <div class="product-card">
               <img
-                src="./images/glo-products/glo-sms.jpg"
+                src="../images/glo-products/glo-sms.jpg"
                 alt="School Management System"
                 width="300px"
               />
@@ -265,7 +291,7 @@
             </div>
             <div class="product-card">
               <img
-                src="./images/glo-products/glo-hospital-Management-system.jpg"
+                src="../images/glo-products/glo-hospital-Management-system.jpg"
                 alt="Hospital Management System"
                 width="300px"
               />
@@ -299,31 +325,33 @@
         </div>
       </section>
 
-      <div class="company-logo-container marquee">
-        <div class="marquee-content">
-          <div class="company-logo">
-            <img src="./images/marquee/greenhost.png" alt="Company 1" />
-          </div>
-          <div class="company-logo">
-            <img src="./images/marquee/hcl.png" alt="Company 2" />
-          </div>
-          <div class="company-logo">
-            <img src="./images/marquee/ibmmedia.png" alt="Company 3" />
-          </div>
-          <div class="company-logo">
-            <img src="./images/marquee/ingram.png" alt="Company 4" />
-          </div>
-          <div class="company-logo">
-            <img src="./images/marquee/omnib.png" alt="Company 4" />
-          </div>
-          <div class="company-logo">
-            <img src="./images/marquee/theseed.png" alt="Company 1" />
-          </div>
-          <div class="company-logo">
-            <img src="./images/marquee/triplecons.png" alt="Company 2" />
+      <section id="customers">
+        <div class="company-logo-container marquee">
+          <div class="marquee-content">
+            <div class="company-logo">
+              <img src="../images/marquee/greenhost.png" alt="Company 1" />
+            </div>
+            <div class="company-logo">
+              <img src="../images/marquee/hcl.png" alt="Company 2" />
+            </div>
+            <div class="company-logo">
+              <img src="../images/marquee/ibmmedia.png" alt="Company 3" />
+            </div>
+            <div class="company-logo">
+              <img src="../images/marquee/ingram.png" alt="Company 4" />
+            </div>
+            <div class="company-logo">
+              <img src="../images/marquee/omnib.png" alt="Company 4" />
+            </div>
+            <div class="company-logo">
+              <img src="../images/marquee/theseed.png" alt="Company 1" />
+            </div>
+            <div class="company-logo">
+              <img src="../images/marquee/triplecons.png" alt="Company 2" />
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <section id="contact" class="contact">
         <h4>
@@ -341,9 +369,9 @@
           <div class="logo">
             <a href="index.html"
               ><img
-                class="uts-logo"
-                src="images/uts-logo.png"
-                alt="uts development logo"
+                class="glo-footer-logo"
+                src="../images/glo-logo-faded.png"
+                alt="gloErp logo faded"
             /></a>
           </div>
           <div class="text">
@@ -394,9 +422,9 @@
                 <a href="https://www.utsdevelopers.com/about">About UTS</a>
               </li>
               <li><a href="index.html">Home</a></li>
-              <li><a href="products.html">Products</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="faq.html">FAQs</a></li>
+              <li><a href="../products.html">Products</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+              <li><a href="../faq.html">FAQs</a></li>
               <li>
                 <a href="https://utsdevelopers.com/clientsarea/login"
                   >Client &amp; Support Portal</a
@@ -442,10 +470,7 @@
       <hr />
 
       <div class="footer-bottom">
-        <div class="copyright">
-          Copyright © <span id="copyright-date"></span> UTS Developers Ltd. All
-          Rights Reserved.
-        </div>
+        <div class="copyright">Powered By UTS Developers Limited.</div>
 
         <div>
           <ul class="copyright-nav">
@@ -461,5 +486,6 @@
     </footer>
 
     <?php include 'footer.php'; ?>
+    <script src="./js/script.js"></script>
   </body>
 </html>
