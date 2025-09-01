@@ -304,6 +304,7 @@ body {
 }
 .product-card h5 {
   color: #141313;
+  font-size: 1rem;
   font-weight: 500;
   margin: 5px;
 }
@@ -314,6 +315,7 @@ body {
 
 .product-card p {
   padding: 0 20px;
+  font-size: 0.9rem;
 }
 
 .btn-product {
@@ -533,24 +535,14 @@ hr {
 
 /* Responsiveness */
 @media only screen and (max-width: 1440px) {
-  /* .carousel-prev,
-  .carousel-next {
-    /* bottom: 300px; */
-  /* padding: 10px 15px 40px 15px; *
-  } 
-  */
   .carousel-slide {
     height: 50vh;
   }
 
   .carousel-next {
-    left: 1380px;
+    left: 95%;
   }
 
-  /* #products {
-    padding: 100px 50px 50px 50px;
-  }
- */
   .products-section-header h4 {
     font-size: 1rem;
   }
@@ -621,10 +613,6 @@ hr {
 
   .menux ul li a {
     font-size: 1rem;
-  }
-
-  .carousel-next {
-    left: 970px;
   }
 
   #products {
@@ -737,7 +725,7 @@ hr {
   }
 
   .carousel-next {
-    left: 700px;
+    left: 92%;
   }
 
   #products {
@@ -809,4 +797,63 @@ hr {
 }
 
 @media only screen and (max-width: 425px) {
+  .top-message {
+    font-size: 0.8rem;
+  }
+
+  .logox {
+    width: 35%;
+  }
+  .sidenav {
+    max-width: 100vw;
+  }
+  .sidenav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: auto;
+    margin: auto;
+  }
+
+  .fa-close {
+    left: 85%;
+  }
+
+  .carousel-next {
+    left: 86%;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact {
+    max-width: 350px;
+    font-size: 0.8rem;
+  }
+  .contact h4,
+  #customers h4 {
+    font-size: 1rem;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+  .copyright-nav {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .copyright-nav li:nth-child(2)::after {
+    content: "";
+  }
 }
