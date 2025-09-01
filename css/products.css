@@ -19,11 +19,12 @@
   color: var(--second-text-color);
 }
 
-.logox  {
+.logox {
   width: 30%;
 }
 
-.fa-bars, .fa-close {
+.fa-bars,
+.fa-close {
   visibility: hidden;
 }
 
@@ -244,7 +245,6 @@
   #benefits {
     padding: 30px 80px;
   }
-  
 }
 
 @media only screen and (max-width: 1024px) {
@@ -303,11 +303,11 @@
   .header-section {
     padding: 10px 80px;
   }
- 
- 
-.fa-bars, .fa-close {
-  visibility: visible;
-}
+
+  .fa-bars,
+  .fa-close {
+    visibility: visible;
+  }
 
   .fa-home {
     bottom: 3px;
@@ -363,5 +363,11 @@
 
   .col-3 .dash {
     margin-right: 70px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .logox {
+    width: 55%;
   }
 }
