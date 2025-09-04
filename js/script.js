@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function startAutoSlide() {
     interval = setInterval(() => {
       showSlide(currentSlide + 1);
-    }, 5000);
+    }, 6000);
   }
 
   function stopAutoSlide() {

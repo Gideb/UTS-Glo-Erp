@@ -10,6 +10,10 @@
   --darker-bg: #eee;
 }
 
+.menulogo {
+  width: 100%;
+}
+
 .logox {
   width: 25%;
 }
